@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ListView: View {
     
+    @Binding var selectedTag: Int
+    
     var body: some View {
         List(starWars, id: \.id) { character in
             Text(character.name)
@@ -19,6 +21,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        ListView(selectedTag: .constant(0))
     }
 }
