@@ -27,8 +27,6 @@ struct ContentView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 
-                ListView(selectedTag: $selectedTag)
-                
             }
             .navigationBarTitle("Star Wars")
         }
